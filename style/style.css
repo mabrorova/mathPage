@@ -1,6 +1,8 @@
 
  /* Header */
-
+body{
+    font: Arial, Helvetice, sans-serif;
+}
 header h1 a{
     text-decoration: none;
     color: rgb(117, 32, 117);
@@ -9,9 +11,11 @@ header h1 a{
 header h1 a:hover{
     text-decoration: none;
     color: rgb(117, 32, 117); 
+    
 }
 .search{
 padding: 10px;
+ background: -webkit-gradient(linear,left top, left bottom,from(rgba(175, 243, 182, 0.39)),to(#23d165));
  background: linear-gradient(rgba(175, 243, 182, 0.39),#23d165);
  
 }
@@ -32,6 +36,7 @@ input{
 }
 .nav{
     padding: 10px;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(241, 237, 18, 0.534)),to(rgb(238, 223, 15)));
     background: linear-gradient(rgba(241, 237, 18, 0.534),rgb(238, 223, 15))
 }
  .nav a{
@@ -42,6 +47,7 @@ input{
      border-right: 1px solid rgb(117, 32, 117);
      text-transform: uppercase;
      line-height: 30px;
+     -webkit-transition: font-size 0.3s ease;
      transition: font-size 0.3s ease;
      }
 
@@ -54,6 +60,7 @@ input{
  /* Introduction */
  .introduction_content{
      padding: 10px;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(175, 243, 182, 0.39)),to(#23d165));
     background: linear-gradient(rgba(175, 243, 182, 0.39),#23d165); 
  }
  .introduction_content h2{
@@ -64,12 +71,14 @@ input{
  }
  .introduction_content p{
      font-size: 20px;
-    justify-content: center; 
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
  }
 
  /* Bars */
 .bars .card{
-    width: 400px;
+    width: 500px;
     height: 500px;
     border: 1px solid rgb(14, 226, 35);
     border-radius: 5%;
@@ -96,9 +105,15 @@ ul li i{
   ul li .circle{
       border: 2px solid red;
       border-radius: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
   }
 
 ul li a{
@@ -108,10 +123,27 @@ ul li a{
     color: rgb(117, 32, 117);   
 }
 ul li a:hover{
+    font-weight: bold;
     font-size: 25px;
     list-style: none;
     text-decoration: none;
     color: rgb(117, 32, 117); 
+    -webkit-transition: font-size 0.4s ease; 
     transition: font-size 0.4s ease;   
 }
+.right_card ul li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.left_card ul li {
+    padding: 2px 2px;
+}
 
+ /* Footer */
+footer .row{
+    height: 60px;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(241, 237, 18, 0.534)),to(rgb(238, 223, 15)));
+    background: linear-gradient(rgba(241, 237, 18, 0.534),rgb(238, 223, 15));
+    padding: 20px;
+    text-align: center;
+}
