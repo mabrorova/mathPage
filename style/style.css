@@ -1,1 +1,117 @@
-@import "root.css";
+
+ /* Header */
+
+header h1 a{
+    text-decoration: none;
+    color: rgb(117, 32, 117);
+    font-size: 50px;
+}
+header h1 a:hover{
+    text-decoration: none;
+    color: rgb(117, 32, 117); 
+}
+.search{
+padding: 10px;
+ background: linear-gradient(rgba(175, 243, 182, 0.39),#23d165);
+ 
+}
+input{
+    color: rgb(117, 32, 117);
+}
+.search button{
+    font-weight: bold;
+    color: rgb(117, 32, 117);
+}
+.search button:hover{
+    font-weight: bold;
+    color: rgb(117, 32, 117);
+}
+ /* Menu */
+.navbar{
+    display: inline-block;
+}
+.nav{
+    padding: 10px;
+    background: linear-gradient(rgba(241, 237, 18, 0.534),rgb(238, 223, 15))
+}
+ .nav a{
+     margin: 0 20px;
+     padding: 10px;
+     color: rgb(117, 32, 117);
+     text-decoration: none;
+     border-right: 1px solid rgb(117, 32, 117);
+     text-transform: uppercase;
+     line-height: 30px;
+     transition: font-size 0.3s ease;
+     }
+
+ .nav a:hover{
+     font-size: 20px;
+     font-weight: bold;
+     text-decoration: none;
+     color: rgb(117, 32, 117);
+ }    
+ /* Introduction */
+ .introduction_content{
+     padding: 10px;
+    background: linear-gradient(rgba(175, 243, 182, 0.39),#23d165); 
+ }
+ .introduction_content h2{
+     font-weight: normal;
+    color: rgb(117, 32, 117);
+
+    
+ }
+ .introduction_content p{
+     font-size: 20px;
+    justify-content: center; 
+ }
+
+ /* Bars */
+.bars .card{
+    width: 400px;
+    height: 500px;
+    border: 1px solid rgb(14, 226, 35);
+    border-radius: 5%;
+ 
+  
+    
+}
+.left_card{
+    float: left;
+}
+.right_card{
+    float: right;
+}
+.card h3{
+    color: rgb(117, 32, 117);      
+}
+ul li{
+    list-style: none;   
+}
+ul li i{
+    text-align: center;
+}
+
+  ul li .circle{
+      border: 2px solid red;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+ul li a{
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(117, 32, 117);   
+}
+ul li a:hover{
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(117, 32, 117); 
+    transition: font-size 0.4s ease;   
+}
+
